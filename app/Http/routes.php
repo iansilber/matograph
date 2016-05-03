@@ -12,6 +12,7 @@
 */
 
 Route::get('/', "MainController@index");
+Route::get('/details', "MainController@details");
 Route::post('/get_movie_details', "MainController@getMovieDetails");
 Route::get('/suggestions', "MainController@suggestions");
 Route::get('/imdb_poster', "MainController@imdbPoster");

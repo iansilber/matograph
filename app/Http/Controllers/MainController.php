@@ -9,10 +9,15 @@ use Log;
 
 class MainController extends Controller {
 
+
     public function index()
     {
-        $year = Carbon::createFromFormat('Y-m-d', "2001-12-10")->year;
-        return view('welcome');
+        return view('search');
+    }
+
+    public function details(Request $request)
+    {
+        return view('details');
     }
 
     public function getMovieDetails(Request $request)
